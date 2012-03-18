@@ -2,8 +2,8 @@ Big Mail Labeler
 
 This simple script connects to your IMAP mailbox, searches through the given
 IMAP folder (usually one that contains all messages, but it does not have to)
-and uses COPY command to "copy" them to a preset folder. In Gmail (and Google
-Apps of course) this causes a label to be added to those messages.
+and uses IMAP COPY command to label them. In Gmail (and Google Apps of course)
+this command actually causes a label to be added to those messages.
 
 You can then conveniently click on the label and see just the big messages and
 decide which ones are important and which ones are weird photos in BMP from
