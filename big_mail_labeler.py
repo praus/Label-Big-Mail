@@ -23,7 +23,7 @@ parser = argparse.ArgumentParser(description='Big Mail Labeler')
 
 parser.add_argument('username', action="store", help='IMAP username.')
 parser.add_argument('-t', '--threshold', action="store", dest="threshold", default=2*1024**2, type=int,
-                    help="What constitutes big message, messages bigger than this will be labeled. (default: %(default)s)")
+                    help="What constitutes big message, messages bigger than this will be labeled. Units are in bytes, default is 2MB (default: %(default)s)")
 parser.add_argument('--print', action="store_true", dest="print_msgs", default=False,
                     help='Prints the big messages. (default: %(default)s)')
 parser.add_argument('--no-label', action="store_true", dest="no_label", default=False,

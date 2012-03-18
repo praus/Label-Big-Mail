@@ -22,8 +22,8 @@ or EasyInstall:
     (sudo) easy_install IMAPClient
     
 
-Basic usage is like this:
-    big_mail_labeler.py your_account@gmail.com
+Basic usage is like this (with threshold 2MB, which is the default):
+    big_mail_labeler.py your_account@gmail.com -t 2097152
 
 -----
     
@@ -31,8 +31,6 @@ usage: big_mail_labeler.py [-h] [-t THRESHOLD] [--print] [--no-label]
                            [-p PASSWORD] [-l LABEL] [-f FOLDER] [-s HOST]
                            [--nossl]
                            username
-
-Big Mail Labeler
 
 positional arguments:
   username              IMAP username.
