@@ -20,3 +20,36 @@ You can install it using PyPI:
 
 or EasyInstall:
     (sudo) easy_install IMAPClient
+    
+    
+usage: big_mail_labeler.py [-h] [-t THRESHOLD] [--print] [--no-label]
+                           [-p PASSWORD] [-l LABEL] [-f FOLDER] [-s HOST]
+                           [--nossl]
+                           username
+
+Big Mail Labeler
+
+positional arguments:
+  username              IMAP username.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -t THRESHOLD, --threshold THRESHOLD
+                        What constitutes big message, messages bigger than
+                        this will be labeled. (default: 2097152)
+  --print               Prints the big messages. (default: False)
+  --no-label            Disable labeling of messages. Just print them.
+                        (default: False)
+  -p PASSWORD, --password PASSWORD
+                        IMAP password, if you leave this out, you'll be asked
+                        by getpass instead.
+  -l LABEL, --label LABEL
+                        Name of the "big message" label. (default: Big)
+  -f FOLDER, --folder FOLDER
+                        IMAP folder to scan. This should ideally contain all
+                        messages, like gmail's All Mail. (default: [Gmail]/All
+                        Mail)
+  -s HOST, --server HOST
+                        IMAP server name (default: imap.gmail.com)
+  --nossl               Do not connect using SSL. (default: True)
+
