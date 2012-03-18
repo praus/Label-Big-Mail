@@ -9,6 +9,9 @@ You can then conveniently click on the label and see just the big messages and
 decide which ones are important and which ones are weird photos in BMP from
 your very distant relative.
 
+Note that for regular, non-gmail IMAP mailboxes, you might want to use
+--no-label flag to avoid copying emails.
+
 This script requires IMAPClient, a convenient Python IMAP library.
 http://imapclient.freshfoo.com/
 
