@@ -69,11 +69,12 @@ big_uids = [ msg[0] for msg in big_messages ]
 
 def print_messages():
     print "\n--- Messages bigger than {}: ".format(options.threshold).ljust(80, '-')
-    print "Format: <date> | <from> | <subject>"
+    print "Format: <date> | <size> | <from> | <subject>"
     for msgid, data in big_messages:
         headers = email.message_from_string(data['RFC822.HEADER'])
+        size = data['RFC822.SIZE']
         date = data['INTERNALDATE']
-        print "{} | {} | {}".format(date, headers['from'], headers['subject'])
+        print "{} | {} | {} | {}".format(date, size, headers['from'], headers['subject'])
 
 if not options.no_label:
     print "Labeling big messages with label %s" % options.label
