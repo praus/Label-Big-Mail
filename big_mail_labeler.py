@@ -3,7 +3,21 @@
 import argparse
 import email
 import bisect
-from imapclient import IMAPClient
+
+try:
+    from imapclient import IMAPClient
+except ImportError:
+    import sys
+    print >>sys.stderr, """This script requires IMAPClient, a convenient Python IMAP library.
+http://imapclient.freshfoo.com/
+
+You can install it using PyPI:
+    (sudo) pip install imapclient
+
+or EasyInstall:
+    (sudo) easy_install IMAPClient
+"""
+    sys.exit(1)
 
 parser = argparse.ArgumentParser(description='Big Mail Labeler')
 
