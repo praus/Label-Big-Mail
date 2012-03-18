@@ -21,6 +21,11 @@ You can install it using PyPI:
 or EasyInstall:
     (sudo) easy_install IMAPClient
     
+
+Basic usage is like this:
+    big_mail_labeler.py your_account@gmail.com
+
+-----
     
 usage: big_mail_labeler.py [-h] [-t THRESHOLD] [--print] [--no-label]
                            [-p PASSWORD] [-l LABEL] [-f FOLDER] [-s HOST]
