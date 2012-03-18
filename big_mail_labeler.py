@@ -80,7 +80,7 @@ if not options.no_label:
     print "Labeling big messages with label %s" % options.label
     server.create_folder(options.label)
     server.copy(big_uids, options.label)
-    print_messages()
+    print "Your messages larger than {} bytes have been labeled with label {}".format(options.threshold, options.label)
 
 if options.print_msgs or options.no_label:
     print_messages()
