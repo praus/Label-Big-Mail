@@ -1,4 +1,5 @@
-Big Mail Labeler
+Label Big Mail
+==============
 
 This simple script connects to your IMAP mailbox, searches through the given
 IMAP folder (usually one that contains all messages, but it does not have to)
