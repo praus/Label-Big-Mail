@@ -1,5 +1,4 @@
-Label Big Mail
-==============
+# Label Big Mail
 
 This simple script connects to your IMAP mailbox, searches through the given
 IMAP folder (usually one that contains all messages, but it does not have to)
@@ -11,23 +10,24 @@ decide which ones are important and which ones are weird photos in BMP from
 your very distant relative.
 
 Note that for regular, non-gmail IMAP mailboxes, you might want to use
---no-label flag to avoid copying emails.
+`--no-label` flag to avoid copying emails.
 
 This script requires IMAPClient, a convenient Python IMAP library.
 http://imapclient.freshfoo.com/
 
 You can install it using PyPI:
-    (sudo) pip install imapclient
+    `(sudo) pip install imapclient`
 
 or EasyInstall:
-    (sudo) easy_install IMAPClient
+    `(sudo) easy_install IMAPClient`
     
 
 Basic usage is like this (with threshold 2MB, which is the default):
-    big_mail_labeler.py your_account@gmail.com -t 2097152
+    `big_mail_labeler.py your_account@gmail.com -t 2097152`
 
 -----
-    
+
+```
 usage: big_mail_labeler.py [-h] [-t THRESHOLD] [--print] [--no-label]
                            [-p PASSWORD] [-l LABEL] [-f FOLDER] [-s HOST]
                            [--nossl]
@@ -56,4 +56,4 @@ optional arguments:
   -s HOST, --server HOST
                         IMAP server name (default: imap.gmail.com)
   --nossl               Do not connect using SSL. (default: True)
-
+```
