@@ -15,13 +15,8 @@ Note that for regular, non-gmail IMAP mailboxes, you might want to use
 This script requires IMAPClient, a convenient Python IMAP library.
 http://imapclient.freshfoo.com/
 
-You can install it using PyPI:
-    `(sudo) pip install imapclient`
-
-or EasyInstall:
-    `(sudo) easy_install IMAPClient`
+You can install it using PyPI: `(sudo) pip install imapclient` or EasyInstall: `(sudo) easy_install IMAPClient`
     
-
 Basic usage is like this (with threshold 2MB, which is the default):
     `big_mail_labeler.py your_account@gmail.com -t 2097152`
 
@@ -30,8 +25,7 @@ Basic usage is like this (with threshold 2MB, which is the default):
 ```
 usage: big_mail_labeler.py [-h] [-t THRESHOLD] [--print] [--no-label]
                            [-p PASSWORD] [-l LABEL] [-f FOLDER] [-s HOST]
-                           [--nossl]
-                           username
+                           [--nossl] username
 
 positional arguments:
   username              IMAP username.
